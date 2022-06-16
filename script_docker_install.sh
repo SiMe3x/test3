@@ -1,9 +1,10 @@
-#! /bin/bash
+#!/bin/bash
+
+#Check if you make sudo
+if [ $USER != "root" ]
+then
+echo "you need make \"sudo $0\" "
+exit $?
+fi
 
 
-clear
-echo "hello"
-echo "HI"
-ls
-ls -l
-echo "done"
